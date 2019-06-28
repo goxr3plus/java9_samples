@@ -64,14 +64,14 @@ public class Streams {
 	private static void streamOfNullable(List<Integer> list) {
 		System.out.println("--------streamOfNullable--------");
 
-		System.err.println("LIST");
+		System.err.println(" LIST ");
 
 		/* List */
 		List<String> l = new ArrayList<>(Arrays.asList("a", "b", null, "c", null, "d"));
 
 		l.stream().flatMap(Stream::ofNullable).forEach(System.out::println);
 
-		System.err.println("MAP");
+		System.err.println(" MAP ");
 
 		/* Map */
 		Map<Integer, String> map = new HashMap<>();
